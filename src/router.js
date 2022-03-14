@@ -21,37 +21,37 @@ const router = new Router({
       component: Home,
     },
     {
-      path:'/creator/:isUpdate/:id',
+      path:'/creator/:isUpdate',
       name: 'Creator',
       props: true,
       component: Creator,
       children: [
         {
-          path: 'action',
+          path: 'action/:id?',
           name: 'Action',
           props: true,
           component: CreateAction,
         },
         {
-          path: 'datatype',
+          path: 'datatype/:id?',
           name: 'DataType',
           props: true,
           component: CreateDataType,
         },
         {
-          path: 'device',
+          path: 'device/:id?',
           name: 'Device',
           props: true,
           component: CreateDevice,
         },
         {
-          path: 'location',
+          path: 'location/:id?',
           name: 'Location',
           props: true,
           component: CreateLocation,
         },
         {
-          path: 'type',
+          path: 'type/:id?',
           name: 'Type',
           props: true,
           component: CreateType,
