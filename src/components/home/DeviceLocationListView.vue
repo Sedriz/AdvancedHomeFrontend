@@ -9,6 +9,19 @@
         :color="'secondary'"
       />
     </div>
+    <div v-if="buttonList == null" class="py-10">
+      <p>Add new <strong>Device</strong></p>
+      <v-btn
+          class="mx-2"
+          fab
+          dark
+          color="primary"
+      >
+        <v-icon dark>
+          mdi-plus
+        </v-icon>
+      </v-btn>
+    </div>
   </div>
 </template>
 
