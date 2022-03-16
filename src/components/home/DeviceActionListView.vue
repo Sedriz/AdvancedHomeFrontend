@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import ActionButton from "@/components/ActionButton.vue";
+import ActionButton from "@/components/home/ActionButton.vue";
 
 export default {
   props: ["buttonList"],

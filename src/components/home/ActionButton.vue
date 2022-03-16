@@ -56,10 +56,6 @@ export default {
 };
 </script>
 <style scoped>
-.btn-size {
-  width: 8em !important;
-  height: 6em !important;
-}
 .btn-title {
   width: 7em !important;
   height: 3em !important;
