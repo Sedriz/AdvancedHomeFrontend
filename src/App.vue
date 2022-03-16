@@ -2,9 +2,7 @@
   <v-app>
     <Toolbar/>
     <v-main class="text-center">
-      <v-container fluid>
       <router-view/>
-    </v-container>
     </v-main>
   </v-app>
 </template>
