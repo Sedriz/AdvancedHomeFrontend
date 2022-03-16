@@ -1,11 +1,9 @@
 <template>
-  <v-container>
-    <div class="d-flex flex-wrap justify-center">
-      <ActionButton
-          v-for="button of buttonList"
-          :key="button.device.id"
-          :displayData="button"/>
-    </div>
+  <v-container class="d-flex flex-wrap justify-center">
+    <ActionButton
+        v-for="button of buttonList"
+        :key="button.device.id"
+        :displayData="button"/>
   </v-container>
 </template>
 
