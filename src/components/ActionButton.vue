@@ -3,9 +3,8 @@
     <v-row>
       <v-btn
           depressed
-          elevation="13"
           fab
-          class="mx-auto mb-2"
+          class="mx-auto mb-1"
           x-large
           :color="color"
       >
