@@ -29,7 +29,9 @@
             <v-btn
               icon
               class="ms-auto"
-              v-on:click="onEditClick"
+              fab
+              link
+              :to="'/creator/update/device/' + displayData.device.id"
               v-bind="attrs"
               v-on="on"
               ><v-icon>mdi-pencil</v-icon></v-btn
@@ -40,7 +42,7 @@
 
         <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
-            <v-btn icon v-on:click="onDeleteClick" v-bind="attrs" v-on="on">
+            <v-btn icon fab v-on:click="onDeleteClick" v-bind="attrs" v-on="on">
               <v-icon>mdi-delete</v-icon>
             </v-btn>
           </template>
