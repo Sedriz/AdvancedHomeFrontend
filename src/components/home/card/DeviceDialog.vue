@@ -121,6 +121,16 @@ export default {
         margin: "0 auto 0 auto",
       };
     },
+    getButtonColor() {
+      let activeState = this.displayData.device.activeState;
+      let color = "error";
+      if (activeState === 1) {
+        color = 'active';
+      } else if (activeState === 0) {
+        color = "textPrimary";
+      }
+      return color;
+    },
   },
   components: {
     GraphComponent,
