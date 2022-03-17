@@ -110,7 +110,7 @@ export default {
       {
         device: {
           activeState: 1, //0 off, 1 on -1 unreachable
-          id: 2,
+          id: 20,
         },
         button: {
           iconActive: "mdi-toggle-switch",
@@ -125,7 +125,7 @@ export default {
       {
         device: {
           activeState: 1, //0 off, 1 on -1 unreachable
-          id: 2,
+          id: 7,
         },
         button: {
           iconActive: "mdi-toggle-switch",
@@ -140,7 +140,7 @@ export default {
       {
         device: {
           activeState: 1, //0 off, 1 on -1 unreachable
-          id: 2,
+          id: 21,
         },
         button: {
           iconActive: "mdi-toggle-switch",
@@ -155,7 +155,7 @@ export default {
       {
         device: {
           activeState: 1, //0 off, 1 on -1 unreachable
-          id: 2,
+          id: 12,
         },
         button: {
           iconActive: "mdi-toggle-switch",
@@ -216,6 +216,7 @@ export default {
       {
         device: {
           activeState: 0, //0 off, 1 on -1 unreachable
+          id: 2,
         },
         button: {
           iconActive: "mdi-lightbulb-on",
@@ -257,6 +258,7 @@ export default {
       {
         device: {
           activeState: 0, //0 off, 1 on -1 unreachable
+          id: 3,
         },
         button: {
           iconActive: "mdi-lightbulb-on",
@@ -298,6 +300,7 @@ export default {
       {
         device: {
           activeState: 0, //0 off, 1 on -1 unreachable
+          id: 4,
         },
         button: {
           iconActive: "mdi-lightbulb-on",
@@ -339,6 +342,7 @@ export default {
       {
         device: {
           activeState: 0, //0 off, 1 on -1 unreachable
+          id: 5,
         },
         button: {
           iconActive: "mdi-lightbulb-on",
@@ -380,6 +384,7 @@ export default {
       {
         device: {
           activeState: 0, //0 off, 1 on -1 unreachable
+          id: 7,
         },
         button: {
           iconActive: "mdi-lightbulb-on",
@@ -421,6 +426,7 @@ export default {
       {
         device: {
           activeState: 0, //0 off, 1 on -1 unreachable
+          id: 8,
         },
         button: {
           iconActive: "mdi-lightbulb-on",
