@@ -5,33 +5,6 @@
     hide-overlay
     transition="dialog-bottom-transition"
   >
-    <!-- Btn -->
-    <template v-slot:activator="{ on, attrs }">
-      <v-btn
-        elevation="1"
-        class="my-3 mx-3 pt-12 pb-8 btn-size"
-        x-large
-        color="primary"
-        v-bind="attrs"
-        v-on="on"
-      >
-        <v-container>
-          <v-row class="mx-auto">
-            <v-icon class="mx-auto" x-large :color="getButtonColor">
-              {{ getButtonIcon }}
-            </v-icon>
-          </v-row>
-
-          <v-row class="text-center text-wrap btn-title overflow-hidden">
-            <p class="mx-auto" :color="getButtonColor">
-              {{ displayData.button.title }}
-            </p>
-          </v-row>
-        </v-container>
-      </v-btn>
-    </template>
-    <!-- /Btn -->
-
     <v-card>
       <v-app-bar dark color="primary" fixed>
         <v-btn icon dark @click="dialog = false">
@@ -112,8 +85,15 @@ import ColorPickerComponent from "./ColorPickerComponent.vue";
 import LightSpeedComponent from "./LightSpeedComponent.vue";
 import LightModeComponent from "./LightModeComponent.vue";
 export default {
-  name: "DeviceDialogButton",
-  props: ["displayData"],
+  props: {
+    displayData: {
+      type: Object,
+      required: true,
+    }
+  },
+  data: () => ({
+    dialog: false
+  }),
   methods: {
     onEditClick() {
       console.log("Editing");
@@ -125,29 +105,7 @@ export default {
       return this.displayData.dialog.actions.indexOf(action) > -1;
     },
   },
-  data() {
-    return {
-      dialog: false,
-    };
-  },
   computed: {
-    getButtonIcon() {
-      let activeState = this.displayData.device.activeState;
-      if (activeState === true) {
-        return this.displayData.button.iconActive;
-      }
-      return this.displayData.button.iconInactive;
-    },
-    getButtonColor() {
-      let activeState = this.displayData.device.activeState;
-      let color = "error";
-      if (activeState === 1) {
-        color = 'active';
-      } else if (activeState === 0) {
-        color = "textPrimary";
-      }
-      return color;
-    },
     getContainerSize() {
       let brName = this.$vuetify.breakpoint.name;
       let widthPercent = "95%";
@@ -173,13 +131,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.btn-size {
-  width: 8em !important;
-  height: 6em !important;
-}
-.btn-title {
-  width: 7em !important;
-  height: 2.5em !important;
-}
-</style>
