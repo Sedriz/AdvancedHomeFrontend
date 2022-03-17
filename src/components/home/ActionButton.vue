@@ -7,6 +7,7 @@
           class="mx-auto mb-1"
           x-large
           :color="color"
+          @click="$refs.dialogComponent.dialog = true"
       >
         <v-icon x-large :color="getButtonColor">
           {{ getButtonIcon }}
@@ -18,11 +19,14 @@
         {{ displayData.button.title }}
       </span>
     </v-row>
+    <DeviceDialog ref="dialogComponent"  :display-data="displayData"/>
   </div>
 </template>
 
 <script>
+import DeviceDialog from "@/components/home/card/DeviceDialog";
 export default {
+  components: {DeviceDialog},
   props: {
     displayData: {
       type: Object,
