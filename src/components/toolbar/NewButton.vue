@@ -26,11 +26,11 @@ export default {
     name: "NewButton",
     data: () => ({
         items: [
-            { text: "Location", icon: "mdi-clock", link: '/creator/create/location' },
-            { text: "Device", icon: "mdi-account", link: '/creator/create/device' },
-            { text: "Action", icon: "mdi-flag", link: '/creator/create/action' },
-            { text: "Type", icon: "mdi-flag", link: '/creator/create/type' },
-            { text: "Data type", icon: "mdi-flag", link: '/creator/create/datatype' },
+            { text: "Location", icon: "mdi-map-marker", link: '/creator/create/location' },
+            { text: "Device", icon: "mdi-server", link: '/creator/create/device' },
+            { text: "Action", icon: "mdi-fast-forward", link: '/creator/create/action' },
+            { text: "Type", icon: "mdi-format-list-bulleted-type", link: '/creator/create/type' },
+            { text: "Data type", icon: "mdi-chart-box", link: '/creator/create/datatype' },
         ],
     }),
 };
