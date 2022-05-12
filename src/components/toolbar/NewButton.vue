@@ -23,7 +23,6 @@
 
 <script>
 export default {
-    name: "NewButton",
     data: () => ({
         items: [
             { text: "Location", icon: "mdi-map-marker", link: '/creator/create/location' },

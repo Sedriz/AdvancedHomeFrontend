@@ -18,12 +18,12 @@ const opts = {
       //light: true,
       themes: {
         dark: {
-          primary: '#3D3E41',
-          secondary: '#0064C0',
+          primary: '#1a2d5f',
+          secondary: '#0a112a',
           active: '#AA8A00',
           error: '#CC0000',
           textPrimary: '#FFF',
-          background: '#060301'
+          background: '#090909'
         },
         light: {
           primary: '#818181',
